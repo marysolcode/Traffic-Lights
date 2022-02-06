@@ -16,31 +16,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFX-lW-P5W">
-                                <rect key="frame" x="145" y="145" width="125" height="127"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFX-lW-P5W">
+                                <rect key="frame" x="144.5" y="145" width="125" height="127"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="ITY-IL-uUr"/>
+                                    <constraint firstAttribute="height" constant="127" id="pgb-vl-dtR"/>
+                                    <constraint firstAttribute="width" secondItem="KFX-lW-P5W" secondAttribute="height" multiplier="125:127" id="qMv-Jn-7kJ"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nN-A0-2Pt">
-                                <rect key="frame" x="145" y="331" width="125" height="127"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nN-A0-2Pt">
+                                <rect key="frame" x="144.5" y="331" width="125" height="127"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2nN-A0-2Pt" secondAttribute="height" multiplier="125:127" id="6sf-HB-Uar"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="FyW-3H-FS7"/>
+                                    <constraint firstAttribute="height" constant="127" id="mfw-BK-k7W"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlN-MC-RBw">
-                                <rect key="frame" x="145" y="516" width="125" height="127"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlN-MC-RBw">
+                                <rect key="frame" x="144.5" y="516" width="125" height="127"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LlN-MC-RBw" secondAttribute="height" multiplier="125:127" id="OUl-FC-sI5"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="Vpj-F6-ptN"/>
+                                    <constraint firstAttribute="height" constant="127" id="Yul-bp-FVu"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F29-V3-Geb">
-                                <rect key="frame" x="60" y="736" width="284" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F29-V3-Geb">
+                                <rect key="frame" x="65" y="736" width="284" height="59"/>
                                 <color key="backgroundColor" systemColor="placeholderTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="7a0-RP-uvD"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="284" id="B4s-W1-Pbq"/>
+                                    <constraint firstAttribute="width" secondItem="F29-V3-Geb" secondAttribute="height" multiplier="284:59" id="Fqo-AY-rjp"/>
+                                </constraints>
                                 <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next Light">
@@ -50,6 +66,21 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="placeholderTextColor"/>
+                        <constraints>
+                            <constraint firstItem="F29-V3-Geb" firstAttribute="top" secondItem="LlN-MC-RBw" secondAttribute="bottom" constant="93" id="0ZT-T7-ANr"/>
+                            <constraint firstItem="LlN-MC-RBw" firstAttribute="height" secondItem="KFX-lW-P5W" secondAttribute="height" id="4Gn-1O-6QK"/>
+                            <constraint firstItem="2nN-A0-2Pt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6FW-iv-b0v"/>
+                            <constraint firstItem="2nN-A0-2Pt" firstAttribute="top" secondItem="KFX-lW-P5W" secondAttribute="bottom" constant="59" id="92L-oI-NmF"/>
+                            <constraint firstItem="2nN-A0-2Pt" firstAttribute="width" secondItem="KFX-lW-P5W" secondAttribute="width" id="Ayb-1R-l9a"/>
+                            <constraint firstItem="F29-V3-Geb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E14-h9-Rxp"/>
+                            <constraint firstItem="LlN-MC-RBw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E1b-um-Vlb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="F29-V3-Geb" secondAttribute="bottom" constant="67" id="Idq-x5-9MR"/>
+                            <constraint firstItem="KFX-lW-P5W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="101" id="Pwv-Xf-kNV"/>
+                            <constraint firstItem="LlN-MC-RBw" firstAttribute="top" secondItem="2nN-A0-2Pt" secondAttribute="bottom" constant="58" id="XB4-hU-hPo"/>
+                            <constraint firstItem="2nN-A0-2Pt" firstAttribute="height" secondItem="KFX-lW-P5W" secondAttribute="height" id="YCF-hk-23F"/>
+                            <constraint firstItem="KFX-lW-P5W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mJ2-LL-Edt"/>
+                            <constraint firstItem="LlN-MC-RBw" firstAttribute="width" secondItem="KFX-lW-P5W" secondAttribute="width" id="prp-CJ-ewz"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
