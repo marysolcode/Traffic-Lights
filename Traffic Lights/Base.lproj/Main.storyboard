@@ -12,7 +12,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Traffic_Lights" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="UIButton" customModule="Traffic_Lights" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -59,9 +59,12 @@
                                 </constraints>
                                 <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Next Light">
+                                <buttonConfiguration key="configuration" style="plain" title="Start">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonActiveLight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fmZ-Ae-f5L"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -82,6 +85,12 @@
                             <constraint firstItem="LlN-MC-RBw" firstAttribute="width" secondItem="KFX-lW-P5W" secondAttribute="width" id="prp-CJ-ewz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonNextLight" destination="F29-V3-Geb" id="s0F-UE-iUI"/>
+                        <outlet property="greenLight" destination="LlN-MC-RBw" id="ye1-cm-hBF"/>
+                        <outlet property="redLight" destination="KFX-lW-P5W" id="ArG-YA-rPu"/>
+                        <outlet property="yellowLight" destination="2nN-A0-2Pt" id="rAg-i5-GnA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
